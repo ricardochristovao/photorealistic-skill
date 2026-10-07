@@ -50,9 +50,13 @@ Skip any step and the image slips through. Do all four and it passes as a real p
 
 ## Quick start
 
-### As a Claude Desktop skill
+### As a Claude Desktop skill (native integration)
 
-Copy the `photorealistic-skill/` folder into your Claude Desktop skills directory or install via plugin. The skill auto-triggers on requests like *"foto real"*, *"realista"*, *"não parecer IA"*, *"looks fake"*, *"AI artifacts"*, or any request for a photo of a person or real-world scene.
+Photorealistic Skill was **designed to work natively inside Claude Desktop**. Copy the `photorealistic-skill/` folder into your Claude Desktop skills directory or install via plugin. Once installed, Claude automatically follows the full 4-step methodology whenever you ask for a realistic photo — no manual prompting needed.
+
+The skill auto-triggers on requests like *"foto real"*, *"realista"*, *"não parecer IA"*, *"looks fake"*, *"AI artifacts"*, *"photorealistic"*, or any request for a photo of a person or real-world scene. Claude will plan the scene, write the prompt following the genre system, review against the defect checklist, and remind you to run `degrade.py` as the mandatory finishing step.
+
+Works with Claude's built-in image generation tools (Magnific, Nano Banana, Seedream) and can guide prompts for external models too.
 
 ### Standalone (any AI image tool)
 
