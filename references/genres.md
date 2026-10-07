@@ -1,0 +1,18 @@
+# Capture genres
+
+Pick the row closest to the request. Use its values in the prompt and its preset in `degrade.py`. If the request mixes genres, choose the one that explains where the camera physically is.
+
+| Genre | Genre sentence to open the prompt | Camera / position | Depth of field | Light | Typical flaws to ask for | Preset |
+|---|---|---|---|---|---|---|
+| Phone snapshot (everyday life, family, friends, UGC, testimonials) | "A casual phone photo a friend took…" | Phone main camera, arm's length to 3 m, eye or chest height | Almost everything in focus | Whatever is there: ceiling lamp, window, phone flash | Slight overexposure on a window or lamp, awkward crop, mild motion blur, slight tilt, someone half in frame | `phone` |
+| Selfie | "A front-camera selfie…" | Phone front camera at arm's length, slight wide-angle distortion near edges | Face sharp, background mostly readable | Ambient | Arm visible at edge, face slightly off-center, nose a bit enlarged by the wide lens | `phone` |
+| Event / stage / conference / party | "An ordinary photo from [event], the kind the event photographer uploads to the album…" | 24-70mm close or 70-200mm from the audience, ISO 3200-6400 | From far: compressed, subject and backdrop nearly the same plane | Hard spot from above, colored spill from screens/LEDs, mixed white balance | Noise, blown highlight on forehead or screen, heads/raised phones at bottom edge, slight tilt | `event` |
+| Office / workplace candid | "A candid photo a colleague took in the office…" | 35mm at 2-4 m, f/2.8-4, or phone | Background readable, not melted | Window light + overhead fluorescent/LED panels | Cables, mugs, sticky notes, monitor glare, green-ish cast from fluorescents | `portrait` or `phone` |
+| Professional / founder / editorial portrait | "A natural editorial portrait for a company website…" | 50-85mm, f/2-2.8, 1.5-3 m | Moderate blur; background recognizable | One real source (window, open shade) + bounce | Flyaway hair, imperfect skin, crooked collar, slight asymmetry in pose | `portrait` |
+| Outdoor daylight / street / travel | "A documentary street photo…" / "A travel photo…" | 28-35mm at f/5.6-8, or phone | Deep | Sun with hard shadows, or overcast | Passersby cut by the frame, signs, parked vehicles, squinting, harsh shadows | `daylight` |
+| Golden hour outdoor portrait | "A photo taken outdoors just before sunset…" | 50-85mm, f/2.8 | Background soft but shapes recognizable | Low sun from the side or behind, warm, with real lens flare only if facing sun | Some haze, stray hair glowing, part of face in shadow | `daylight` |
+| Food / restaurant | "A phone photo of the table at a restaurant…" | Phone at 30-60 cm, slight top-down angle | Mostly in focus, far edge soft | Restaurant ambient (warm), window | Crumbs, used napkin, sauce drip, another person's hand or plate at the edge | `phone` |
+| Product in real use | "A real customer photo of [product] being used at home…" | Phone, 0.5-2 m | Mostly in focus | Home light | Fingerprints, dust, worn surfaces, cable clutter, imperfect placement | `phone` |
+| Interior / real estate | "A real estate listing photo…" | 16-24mm at f/8, tripod height ~1.4 m | Deep | Window daylight + interior lamps on | Slight window blowout, imperfect vertical lines only if handheld, small clutter | `daylight` |
+| Analog film look | "A 35mm film snapshot from…" | Compact or SLR + 35/50mm | Depends on scene | Available light or on-camera flash | Grain, slight color shift, flash falloff, light leak only if asked | `film` |
+| Night / low light | "A handheld photo at night…" | Phone night mode or camera at ISO 6400+ | Moderate | Streetlights, neon, screens | Noise, smeared detail, light halos, color casts | `event` |
