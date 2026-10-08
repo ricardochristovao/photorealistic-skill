@@ -3,6 +3,7 @@
 # 📸 Photorealistic Skill
 
 ### Make AI-generated images indistinguishable from real photographs
+“The goal isn't to make AI look perfect. The goal is to make it look like someone actually took the picture.”
 
 **A systematic framework + post-processing toolkit that eliminates the "AI look" — works with Midjourney, Flux, DALL-E, Stable Diffusion, Seedream, and any image model.**
 
